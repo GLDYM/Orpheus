@@ -22,7 +22,7 @@ public abstract class LivingEntityExperienceMixin {
         if ((Object) this instanceof Player player
                 && !player.level().getGameRules().getBoolean(GameRules.RULE_KEEPINVENTORY)
                 && player.getInventory().contains(ItemsRegistry.ORPHEUS_LYRE.get().getDefaultInstance())
-                && ConfigDataCommon.ORPHEUS_LYRE_POWER.getDefault().matches(".*(?:keep|both).*")) {
+                && ConfigDataCommon.ORPHEUS_LYRE_POWER.get().matches(".*(?:keep|both).*")) {
             cir.setReturnValue(0);
         }
     }

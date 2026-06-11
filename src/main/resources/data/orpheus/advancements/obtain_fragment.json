@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "orpheus:lyre"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_fragment.title"
+    },
+    "description": {
+      "translate": "advancements.orpheus.obtain_fragment.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "orpheus:textures/block/mythos_block.png"
+  },
+  "criteria": {
+    "fragments": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "orpheus:homers_the_iliad_scroll_fragment",
+              "orpheus:homers_the_odyssey_scroll_fragment",
+              "orpheus:platos_republic_scroll_fragment",
+              "orpheus:aristotles_nicomachean_ethics_scroll_fragment",
+              "orpheus:calliope_poem_fragment",
+              "orpheus:thucydides_peloponnesian_war_scroll_fragment"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "fragments"
+    ]
+  ]
+}

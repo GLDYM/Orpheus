@@ -47,15 +47,15 @@ public class PandorasPithosItem extends Item {
                 EntityType.PIG
         );
 
-        EntityType<?> randomEntityType = possibleEntities.get(world.getRandom().nextInt(0, possibleEntities.size() - 1));
+        EntityType<?> randomEntityType = possibleEntities.get(world.getRandom().nextInt(possibleEntities.size()));
 
-        int witherPossiblity = world.getRandom().nextInt(0, 199);
+        int witherPossiblity = world.getRandom().nextInt(200);
 
         if (witherPossiblity == 0) {
             randomEntityType = EntityType.WITHER; // 0.5% chance to spawn the Wither
         }
 
-        int random = world.getRandom().nextInt(0, 7); // After randomly choosing the entity it will spawn 0 to 6 entities
+        int random = world.getRandom().nextInt(7); // After randomly choosing the entity it will spawn 0 to 6 entities
 
         for (int i = 0; i < random; i++) {
             Entity randomEntity = randomEntityType.create(world);
@@ -87,12 +87,12 @@ public class PandorasPithosItem extends Item {
                 Items.STICK.getDefaultInstance()
         );
 
-        ItemStack randomItem = possibleItems.get(world.getRandom().nextInt(0, possibleItems.size() - 1));
-        int random = world.getRandom().nextInt(0, 6);
+        ItemStack randomItem = possibleItems.get(world.getRandom().nextInt(possibleItems.size()));
+        int random = world.getRandom().nextInt(7);
         for (int i = 0; i < random; i++) {
             ItemStack itemCopy = randomItem.copy();
             if (!player.getInventory().add(itemCopy)) {
-                Block.dropResources(world.getBlockState(player.blockPosition()), world, player.blockPosition(), null, null, itemCopy);
+                Block.popResource(world, player.blockPosition(), itemCopy);
             }
         }
 
@@ -112,7 +112,7 @@ public class PandorasPithosItem extends Item {
                 MobEffects.WEAKNESS
         );
 
-        var randomEffect = possibleEffects.get(pLevel.getRandom().nextInt(0, possibleEffects.size() - 1));
+        var randomEffect = possibleEffects.get(pLevel.getRandom().nextInt(possibleEffects.size()));
 
         return new MobEffectInstance(randomEffect, 1800, 3);
     }

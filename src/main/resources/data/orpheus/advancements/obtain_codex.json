@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "orpheus:hellenic_codex"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_codex.title"
+    },
+    "description": {
+      "translate": "advancements.orpheus.obtain_codex.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "orpheus:obtain_fragment",
+  "criteria": {
+    "codex": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "orpheus:hellenic_codex"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "codex"
+    ]
+  ]
+}

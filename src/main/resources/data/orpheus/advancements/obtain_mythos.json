@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "orpheus:mythos_block"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_mythos.title"
+    },
+    "description": {
+      "translate": "advancements.orpheus.obtain_mythos.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "orpheus:obtain_fragment",
+  "criteria": {
+    "mythos_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "orpheus:mythos_block"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "mythos_block"
+    ]
+  ]
+}

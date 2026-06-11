@@ -1,5 +1,16 @@
 {
   "variants": {
-    "": { "model": "orpheus:block/mythos_block" }
+    "dimension=overworld": {
+      "model": "orpheus:block/mythos_block"
+    },
+    "dimension=overworld_active": {
+      "model": "orpheus:block/mythos_block_overworld"
+    },
+    "dimension=nether": {
+      "model": "orpheus:block/mythos_block_nether"
+    },
+    "dimension=nether_active": {
+      "model": "orpheus:block/mythos_block_nether_active"
+    }
   }
 }

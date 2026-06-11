@@ -16,7 +16,7 @@ public abstract class ServerPlayerCopyFromMixin {
 	private boolean redirectCopyFromCondition(GameRules instance, GameRules.Key<GameRules.BooleanValue> rule, ServerPlayer oldPlayer, boolean alive) {
         return ((ServerPlayer) (Object) this).serverLevel().getGameRules().getBoolean(GameRules.RULE_KEEPINVENTORY)
                 || (oldPlayer.getInventory().contains(ItemsRegistry.ORPHEUS_LYRE.get().getDefaultInstance())
-                && ConfigDataCommon.ORPHEUS_LYRE_POWER.getDefault().matches(".*(?:keep|both).*"));
+                && ConfigDataCommon.ORPHEUS_LYRE_POWER.get().matches(".*(?:keep|both).*"));
 
     }
 

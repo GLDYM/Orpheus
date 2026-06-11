@@ -25,7 +25,6 @@ public class RandomPotionEffectItem extends HoneyBottleItem {
         if (!pLevel.isClientSide()) {
             pEntityLiving.addEffect(getRandomEffect(pLevel));
             pLevel.playSound(null, pEntityLiving.blockPosition(), SoundEvents.AMETHYST_BLOCK_HIT, SoundSource.PLAYERS, 1, 1);
-            pStack.shrink(1);
         }
         return super.finishUsingItem(pStack, pLevel, pEntityLiving);
     }
@@ -39,7 +38,7 @@ public class RandomPotionEffectItem extends HoneyBottleItem {
                 MobEffects.REGENERATION
         );
 
-        var randomEffect = possibleEffects.get(pLevel.getRandom().nextInt(0, possibleEffects.size() - 1));
+        var randomEffect = possibleEffects.get(pLevel.getRandom().nextInt(possibleEffects.size()));
 
         return new MobEffectInstance(randomEffect, 1800, 3);
     }

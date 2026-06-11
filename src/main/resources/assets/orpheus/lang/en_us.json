@@ -1,6 +1,23 @@
 {
   "itemGroup.orpheus.main": "Orpheus",
 
+  "advancements.orpheus.obtain_fragment.title": "Orpheus",
+  "advancements.orpheus.obtain_fragment.description": "Perhaps a willing trader will part with this fragment.",
+  "advancements.orpheus.obtain_mythos.title": "Mythos, The Sacred Block",
+  "advancements.orpheus.obtain_mythos.description": "Atop this sacred block, I sense the gods attuning their ears to my presence.",
+  "advancements.orpheus.obtain_calliopes.title": "Calliope, Muse of Epic Poetry",
+  "advancements.orpheus.obtain_calliopes.description": "Surrounded by flowers and bowing reverently with a codex in hand, I seek Calliope's attention.",
+  "advancements.orpheus.obtain_son.title": "Orpheus, Legendary Musician",
+  "advancements.orpheus.obtain_son.description": "In the Underworld, I will encircle myself with blocks of magma, ensuring He hears my call.",
+  "advancements.orpheus.obtain_codex.title": "Codex",
+  "advancements.orpheus.obtain_codex.description": "The muse of epic poetry",
+  "advancements.orpheus.obtain_lyre.title": "I Am..",
+  "advancements.orpheus.obtain_lyre.description": "Immortal?",
+  "advancements.orpheus.obtain_gut.title": "Guts, Yeah Just Guts",
+  "advancements.orpheus.obtain_gut.description": "With wisdom and skill, I shall... Nah, just guts",
+  "advancements.orpheus.obtain_tear.title": "Even He Cried",
+  "advancements.orpheus.obtain_tear.description": "Why is this ore not in the Nether? Like... It would be cooler, right?",
+
   "item.orpheus.orpheus_lyre": "Orpheus Lyre",
   "item.orpheus.tears_of_hades": "Tears Of Hades",
   "item.orpheus.tears_bow": "Tears Bow",
@@ -34,6 +51,7 @@
   "item.orpheus.hephaestus_leggings": "Hephaestus Leggings",
   "item.orpheus.hephaestus_boots": "Hephaestus Boots",
 
+  "entity.minecraft.villager.philosopher": "Philosopher",
   "entity.minecraft.villager.orpheus.philosopher": "Philosopher",
   "entity.orpheus.viper": "Vipera Ammodytes",
 
@@ -46,7 +64,6 @@
   "block.orpheus.deepslate_tears_of_hades_ore": "Deepslate Tears of Hades Ore",
   "block.orpheus.tears_of_hades_ore": "Tears of Hades Ore",
   "block.orpheus.tears_of_hades_block": "Tears of Hades Block",
-
 
   "sounds.orpheus.entity.viper.ambient": "Viper Hissing",
   "sounds.orpheus.entity.viper.death": "Viper Death",

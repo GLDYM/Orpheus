@@ -1,7 +1,7 @@
 package com.ecarrascon.orpheus.registry;
 
 import com.ecarrascon.orpheus.Orpheus;
-import com.ecarrascon.orpheus.block.MyhtosBlock;
+import com.ecarrascon.orpheus.block.MythosBlock;
 import com.ecarrascon.orpheus.block.NectarCropBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -33,7 +33,7 @@ public class BlocksRegistry {
                     .strength(0.8f)
             ));
     public static final DeferredBlock<Block> MYTHOS_BLOCK = BLOCKS.register("mythos_block",
-            () -> new MyhtosBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL)
+            () -> new MythosBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHITE_WOOL)
                     .strength(0.8f)
             ));
 

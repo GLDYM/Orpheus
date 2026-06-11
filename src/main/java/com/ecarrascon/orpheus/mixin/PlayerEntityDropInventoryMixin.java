@@ -16,7 +16,7 @@ public abstract class PlayerEntityDropInventoryMixin {
     private void noEnterTheIfToNotDropTheItems(CallbackInfo info) {
         if (!((Player) (Object) this).level().getGameRules().getBoolean(GameRules.RULE_KEEPINVENTORY)
                 && ((Player) (Object) this).getInventory().contains(ItemsRegistry.ORPHEUS_LYRE.get().getDefaultInstance())
-                && ConfigDataCommon.ORPHEUS_LYRE_POWER.getDefault().matches(".*(?:keep|both).*")) {
+                && ConfigDataCommon.ORPHEUS_LYRE_POWER.get().matches(".*(?:keep|both).*")) {
             info.cancel();
         }
     }

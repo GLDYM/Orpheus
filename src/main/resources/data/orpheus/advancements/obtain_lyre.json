@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "orpheus:orpheus_lyre"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_lyre.title"
+    },
+    "description": {
+      "translate": "advancements.orpheus.obtain_lyre.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "orpheus:obtain_son",
+  "criteria": {
+    "orpheus_lyre": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "orpheus:orpheus_lyre"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "orpheus_lyre"
+    ]
+  ]
+}

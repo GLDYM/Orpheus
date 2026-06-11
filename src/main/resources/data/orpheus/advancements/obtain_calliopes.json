@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "orpheus:calliopes_love"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_calliopes.title"
+    },
+    "description": {
+      "translate": "advancements.orpheus.obtain_calliopes.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "orpheus:obtain_codex",
+  "criteria": {
+    "calliopes_love": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "orpheus:calliopes_love"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "calliopes_love"
+    ]
+  ]
+}
