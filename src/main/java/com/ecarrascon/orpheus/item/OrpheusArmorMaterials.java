@@ -2,78 +2,40 @@ package com.ecarrascon.orpheus.item;
 
 import com.ecarrascon.orpheus.Orpheus;
 import com.ecarrascon.orpheus.registry.ItemsRegistry;
-import net.minecraft.sounds.SoundEvent;
+import net.minecraft.core.Holder;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 
-import java.util.function.Supplier;
+import java.util.EnumMap;
+import java.util.List;
+import java.util.Map;
 
-public enum OrpheusArmorMaterials implements ArmorMaterial {
-    HEPHAESTUS("hephaestus", 33, new int[]{3, 6, 8, 3}, 25, SoundEvents.ARMOR_EQUIP_NETHERITE,
-            3.5f, 0.0f, () -> Ingredient.of(ItemsRegistry.HEPHAESTUS_ARMOR_FRAGMENT.get()));
+public final class OrpheusArmorMaterials {
+    public static final Holder<ArmorMaterial> HEPHAESTUS = Holder.direct(
+            new ArmorMaterial(
+                    createDefenseMap(3, 6, 8, 3),
+                    25,
+                    SoundEvents.ARMOR_EQUIP_NETHERITE,
+                    () -> Ingredient.of(ItemsRegistry.HEPHAESTUS_ARMOR_FRAGMENT.get()),
+                    List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(Orpheus.MOD_ID, "hephaestus"))),
+                    3.5f,
+                    0.0f
+            )
+    );
 
-    private final String name;
-    private final int durabilityMultiplier;
-    private final int[] protectionAmounts;
-    private final int enchantmentValue;
-    private final SoundEvent equipSound;
-    private final float toughness;
-    private final float knockbackResistance;
-    private final Supplier<Ingredient> repairIngredient;
-
-    private static final int[] BASE_DURABILITY = {11, 16, 16, 13};
-
-    OrpheusArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound,
-                          float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
-        this.name = name;
-        this.durabilityMultiplier = durabilityMultiplier;
-        this.protectionAmounts = protectionAmounts;
-        this.enchantmentValue = enchantmentValue;
-        this.equipSound = equipSound;
-        this.toughness = toughness;
-        this.knockbackResistance = knockbackResistance;
-        this.repairIngredient = repairIngredient;
+    private OrpheusArmorMaterials() {
     }
 
-    @Override
-    public int getDurabilityForType(ArmorItem.Type pType) {
-        return BASE_DURABILITY[pType.ordinal()] * this.durabilityMultiplier;
-    }
-
-    @Override
-    public int getDefenseForType(ArmorItem.Type pType) {
-        return this.protectionAmounts[pType.ordinal()];
-    }
-
-    @Override
-    public int getEnchantmentValue() {
-        return enchantmentValue;
-    }
-
-    @Override
-    public SoundEvent getEquipSound() {
-        return this.equipSound;
-    }
-
-    @Override
-    public Ingredient getRepairIngredient() {
-        return this.repairIngredient.get();
-    }
-
-    @Override
-    public String getName() {
-        return Orpheus.MOD_ID + ":" + this.name;
-    }
-
-    @Override
-    public float getToughness() {
-        return this.toughness;
-    }
-
-    @Override
-    public float getKnockbackResistance() {
-        return this.knockbackResistance;
+    private static Map<ArmorItem.Type, Integer> createDefenseMap(int boots, int leggings, int chestplate, int helmet) {
+        Map<ArmorItem.Type, Integer> defense = new EnumMap<>(ArmorItem.Type.class);
+        defense.put(ArmorItem.Type.BOOTS, boots);
+        defense.put(ArmorItem.Type.LEGGINGS, leggings);
+        defense.put(ArmorItem.Type.CHESTPLATE, chestplate);
+        defense.put(ArmorItem.Type.HELMET, helmet);
+        defense.put(ArmorItem.Type.BODY, 0);
+        return defense;
     }
 }

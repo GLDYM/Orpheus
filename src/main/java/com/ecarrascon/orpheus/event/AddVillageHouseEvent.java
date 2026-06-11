@@ -12,17 +12,17 @@ import net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement;
 import net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Mod.EventBusSubscriber(modid = Orpheus.MOD_ID)
+@EventBusSubscriber(modid = Orpheus.MOD_ID)
 public class AddVillageHouseEvent {
     private static final ResourceKey<StructureProcessorList> EMPTY_PROCESSOR_LIST_KEY = ResourceKey.create(
-            Registries.PROCESSOR_LIST, new ResourceLocation("minecraft", "empty"));
+            Registries.PROCESSOR_LIST, ResourceLocation.fromNamespaceAndPath("minecraft", "empty"));
 
     /**
      * Adds the building to the targeted pool.
@@ -77,19 +77,19 @@ public class AddVillageHouseEvent {
         // Adds our piece to all village houses pool
         // Note, the resourcelocation is getting the pool files from the data folder. Not assets folder.
         addBuildingToPool(templatePoolRegistry, processorListRegistry,
-                new ResourceLocation("minecraft:village/plains/houses"),
+                ResourceLocation.parse("minecraft:village/plains/houses"),
                 "orpheus:philosopher_house_village", 1);
 
         addBuildingToPool(templatePoolRegistry, processorListRegistry,
-                new ResourceLocation("minecraft:village/snowy/houses"),
+                ResourceLocation.parse("minecraft:village/snowy/houses"),
                 "orpheus:philosopher_house_village_snowy", 1);
 
         addBuildingToPool(templatePoolRegistry, processorListRegistry,
-                new ResourceLocation("minecraft:village/savanna/houses"),
+                ResourceLocation.parse("minecraft:village/savanna/houses"),
                 "orpheus:philosopher_house_village_savanna", 1);
 
         addBuildingToPool(templatePoolRegistry, processorListRegistry,
-                new ResourceLocation("minecraft:village/desert/houses"),
+                ResourceLocation.parse("minecraft:village/desert/houses"),
                 "orpheus:philosopher_house_village_desert", 1);
     }
 }

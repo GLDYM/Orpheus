@@ -10,5 +10,5 @@
       "condition": "minecraft:random_chance"
     }
   ],
-  "item": "minecraft:scute"
+  "item": "minecraft:turtle_scute"
 }

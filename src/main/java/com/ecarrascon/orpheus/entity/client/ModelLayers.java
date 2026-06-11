@@ -6,5 +6,5 @@ import net.minecraft.resources.ResourceLocation;
 
 public class ModelLayers {
     public static final ModelLayerLocation VIPER_LAYER = new ModelLayerLocation(
-            new ResourceLocation(Orpheus.MOD_ID, "viper_layer"), "main");
+            ResourceLocation.fromNamespaceAndPath(Orpheus.MOD_ID, "viper_layer"), "main");
 }

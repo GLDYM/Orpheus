@@ -6,9 +6,10 @@ import com.ecarrascon.orpheus.registry.VillagersRegistry;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.village.VillagerTradesEvent;
 
 
@@ -16,7 +17,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.ArrayList;
 import java.util.List;
 
-@Mod.EventBusSubscriber(modid = Orpheus.MOD_ID)
+@EventBusSubscriber(modid = Orpheus.MOD_ID)
 @ParametersAreNonnullByDefault
 public class PhilosopherTradesEvent
 {
@@ -59,6 +60,6 @@ public class PhilosopherTradesEvent
 	private static void addTrade(Int2ObjectMap<List<VillagerTrades.ItemListing>> trades, int level, ItemStack input1,
 								 ItemStack output, int maxUses, int xp, float priceMultiplier) {
 		trades.computeIfAbsent(level, k -> new ArrayList<>()).add((pTrader, pRandom) ->
-				new MerchantOffer(input1, output, maxUses, xp, priceMultiplier));
+				new MerchantOffer(new ItemCost(input1.getItem(), input1.getCount()), output, maxUses, xp, priceMultiplier));
 	}
 }

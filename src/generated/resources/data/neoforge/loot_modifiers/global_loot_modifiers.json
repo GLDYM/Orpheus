@@ -1,8 +1,8 @@
 {
   "entries": [
     "orpheus:cow_gut_from_cow",
-    "orpheus:armor_fragment_from_suspicious_sand",
-    "orpheus:scute_from_turtle"
+    "orpheus:scute_from_turtle",
+    "orpheus:armor_fragment_from_suspicious_sand"
   ],
   "replace": false
 }

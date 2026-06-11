@@ -1,5 +1,6 @@
 package com.ecarrascon.orpheus.item;
 
+import net.minecraft.core.Holder;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.MobEffect;
@@ -30,7 +31,7 @@ public class RandomPotionEffectItem extends HoneyBottleItem {
     }
 
     private MobEffectInstance getRandomEffect(Level pLevel) {
-        List<MobEffect> possibleEffects = Arrays.asList(
+        List<Holder<MobEffect>> possibleEffects = Arrays.asList(
                 MobEffects.MOVEMENT_SPEED,
                 MobEffects.DAMAGE_BOOST,
                 MobEffects.ABSORPTION,
@@ -38,7 +39,7 @@ public class RandomPotionEffectItem extends HoneyBottleItem {
                 MobEffects.REGENERATION
         );
 
-        MobEffect randomEffect = possibleEffects.get(pLevel.getRandom().nextInt(0, possibleEffects.size() - 1));
+        var randomEffect = possibleEffects.get(pLevel.getRandom().nextInt(0, possibleEffects.size() - 1));
 
         return new MobEffectInstance(randomEffect, 1800, 3);
     }

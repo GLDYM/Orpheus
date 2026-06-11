@@ -15,7 +15,9 @@ import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.core.BlockPos;
 
+@SuppressWarnings("deprecation")
 public class ViperEntity extends Monster {
 
     public ViperEntity(EntityType<? extends Monster> pEntityType, Level pLevel) {
@@ -80,7 +82,7 @@ public class ViperEntity extends Monster {
         }
 
         public boolean canContinueToUse() {
-            float f = this.mob.getLightLevelDependentMagicValue();
+            float f = this.mob.level().getLightLevelDependentMagicValue(BlockPos.containing(this.mob.getX(), this.mob.getEyeY(), this.mob.getZ()));
             if (f >= 0.5F && this.mob.getRandom().nextInt(100) == 0) {
                 this.mob.setTarget((LivingEntity)null);
                 return false;
@@ -99,7 +101,7 @@ public class ViperEntity extends Monster {
             super(viper, pEntityTypeToTarget, true);
         }
         public boolean canUse() {
-            float f = this.mob.getLightLevelDependentMagicValue();
+            float f = this.mob.level().getLightLevelDependentMagicValue(BlockPos.containing(this.mob.getX(), this.mob.getEyeY(), this.mob.getZ()));
             return f >= 0.5F ? false : super.canUse();
         }
     }

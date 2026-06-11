@@ -6,7 +6,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -27,10 +27,10 @@ public class NectarCropBlock extends CropBlock {
 
 
     @Override
-    public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand pHand, BlockHitResult pHit) {
+    protected ItemInteractionResult useItemOn(ItemStack stack, BlockState state, Level world, BlockPos pos, Player player, InteractionHand pHand, BlockHitResult pHit) {
 
         if (isMaxAge(state) && !world.isClientSide() && !player.isSpectator()
-                && player.isHolding(Items.HONEY_BOTTLE)) {
+                && stack.is(Items.HONEY_BOTTLE)) {
 
             PlayerUtils.decrementHeldItem(player, Items.HONEY_BOTTLE);
 
@@ -42,10 +42,9 @@ public class NectarCropBlock extends CropBlock {
 
 
             world.setBlock(pos, state.setValue(AGE, 0), 2);
-
-
+            return ItemInteractionResult.sidedSuccess(world.isClientSide());
         }
 
-        return super.use(state, world, pos, player, pHand, pHit);
+        return super.useItemOn(stack, state, world, pos, player, pHand, pHit);
     }
 }

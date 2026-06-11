@@ -3,6 +3,7 @@ package com.ecarrascon.orpheus.item;
 import com.ecarrascon.orpheus.registry.ItemsRegistry;
 import com.ecarrascon.orpheus.util.PlayerUtils;
 import com.ecarrascon.orpheus.util.WorldUtils;
+import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -91,14 +92,14 @@ public class PandorasPithosItem extends Item {
         for (int i = 0; i < random; i++) {
             ItemStack itemCopy = randomItem.copy();
             if (!player.getInventory().add(itemCopy)) {
-                Block.dropResources(player.getFeetBlockState(), world, player.blockPosition(), null, null, itemCopy);
+                Block.dropResources(world.getBlockState(player.blockPosition()), world, player.blockPosition(), null, null, itemCopy);
             }
         }
 
     }
 
     private MobEffectInstance getRandomEffect(Level pLevel) {
-        List<MobEffect> possibleEffects = Arrays.asList(
+        List<Holder<MobEffect>> possibleEffects = Arrays.asList(
                 MobEffects.MOVEMENT_SPEED,
                 MobEffects.DAMAGE_BOOST,
                 MobEffects.ABSORPTION,
@@ -111,7 +112,7 @@ public class PandorasPithosItem extends Item {
                 MobEffects.WEAKNESS
         );
 
-        MobEffect randomEffect = possibleEffects.get(pLevel.getRandom().nextInt(0, possibleEffects.size() - 1));
+        var randomEffect = possibleEffects.get(pLevel.getRandom().nextInt(0, possibleEffects.size() - 1));
 
         return new MobEffectInstance(randomEffect, 1800, 3);
     }

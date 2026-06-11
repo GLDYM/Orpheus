@@ -4,8 +4,6 @@ package com.ecarrascon.orpheus.entity.client;// Made with Blockbench 4.8.3
 
 
 import com.ecarrascon.orpheus.entity.animations.AnimationDefinitions;
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
@@ -77,11 +75,6 @@ public class ViperModel<T extends Entity> extends HierarchicalModel<T> {
 
 		this.head.yRot = pNetHeadYaw * ((float)Math.PI / 180F);
 		this.head.xRot = pHeadPitch * ((float)Math.PI / 180F);
-	}
-
-	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		viperaammodytes.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 
 	@Override

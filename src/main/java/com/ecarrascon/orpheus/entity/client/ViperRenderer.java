@@ -15,7 +15,7 @@ public class ViperRenderer extends MobRenderer<ViperEntity, ViperModel<ViperEnti
 
     @Override
     public ResourceLocation getTextureLocation(ViperEntity pEntity) {
-        return new ResourceLocation(Orpheus.MOD_ID, "textures/entity/vipera_ammodytes.png");
+        return ResourceLocation.fromNamespaceAndPath(Orpheus.MOD_ID, "textures/entity/vipera_ammodytes.png");
     }
 
     @Override

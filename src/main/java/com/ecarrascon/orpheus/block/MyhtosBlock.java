@@ -50,14 +50,14 @@ public class MyhtosBlock extends Block {
     private void giveCalliopesLoveItem(Player player, Level world) {
         ItemStack calliopesLove = ItemsRegistry.CALLIOPES_LOVE.get().getDefaultInstance();
         if (!player.getInventory().add(calliopesLove)) {
-            Block.dropResources(player.getFeetBlockState(), world, player.blockPosition(), null, null, calliopesLove);
+            Block.dropResources(world.getBlockState(player.blockPosition()), world, player.blockPosition(), null, null, calliopesLove);
         }
     }
 
     private void giveOrpheusLyreItem(Player player, Level world) {
         ItemStack orpheusLyre = ItemsRegistry.ORPHEUS_LYRE.get().getDefaultInstance();
         if (!player.getInventory().add(orpheusLyre)) {
-            Block.dropResources(player.getFeetBlockState(), world, player.blockPosition(), null, null, orpheusLyre);
+            Block.dropResources(world.getBlockState(player.blockPosition()), world, player.blockPosition(), null, null, orpheusLyre);
         }
     }
 

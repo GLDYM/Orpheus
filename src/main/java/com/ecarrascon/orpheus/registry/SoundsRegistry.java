@@ -17,6 +17,6 @@ public class SoundsRegistry {
     public static final DeferredHolder<SoundEvent, SoundEvent> ENTITY_VIPER_HURT = registerSoundEvents("entity.viper.hurt");
 
     private static DeferredHolder<SoundEvent, SoundEvent> registerSoundEvents(String name) {
-        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Orpheus.MOD_ID, name)));
+        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(Orpheus.MOD_ID, name)));
     }
 }
