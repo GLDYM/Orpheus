@@ -1,0 +1,33 @@
+{
+  "parent": "orpheus:guide/obtain_son",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orpheus:orpheus_lyre"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.orpheus.obtain_lyre.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "orpheus:orpheus_lyre"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_lyre.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

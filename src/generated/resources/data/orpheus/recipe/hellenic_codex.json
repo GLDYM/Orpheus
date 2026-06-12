@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "orpheus:homers_the_iliad_scroll_fragment"
+    },
+    {
+      "item": "orpheus:homers_the_odyssey_scroll_fragment"
+    },
+    {
+      "item": "orpheus:platos_republic_scroll_fragment"
+    },
+    {
+      "item": "orpheus:aristotles_nicomachean_ethics_scroll_fragment"
+    },
+    {
+      "item": "orpheus:thucydides_peloponnesian_war_scroll_fragment"
+    },
+    {
+      "item": "orpheus:calliope_poem_fragment"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "orpheus:hellenic_codex"
+  }
+}

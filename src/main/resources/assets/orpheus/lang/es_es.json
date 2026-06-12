@@ -21,7 +21,6 @@
   "item.orpheus.orpheus_lyre": "Lira de Orfeo",
   "item.orpheus.tears_of_hades": "Lagrimas de Hades",
   "item.orpheus.tears_bow": "Arco de Lagrimas",
-  "item.orpheus.vipera_ammodytes_spawn_egg": "Huevo de Engendro de Vipera Ammodytes",
   "item.orpheus.hellenic_codex": "Codice Helenico",
   "item.orpheus.aristotles_nicomachean_ethics_scroll_fragment": "Fragmento de Pergamino de la Etica Nicomaquea de Aristoteles",
   "item.orpheus.brotoi_nectar": "Nectar Brotoi",
@@ -53,7 +52,6 @@
 
   "entity.minecraft.villager.philosopher": "Filosofo",
   "entity.minecraft.villager.orpheus.philosopher": "Filosofo",
-  "entity.orpheus.viper": "Vipera Ammodytes",
 
   "block.orpheus.moly_herb": "Hierba Moly",
   "block.orpheus.epiphany_table": "Mesa de Epifania",
@@ -65,7 +63,16 @@
   "block.orpheus.tears_of_hades_ore": "Mineral de Lagrimas de Hades",
   "block.orpheus.tears_of_hades_block": "Bloque de Lagrimas de Hades",
 
-  "sounds.orpheus.entity.viper.ambient": "Siseo de Vibora",
-  "sounds.orpheus.entity.viper.death": "Muerte de Vibora",
-  "sounds.orpheus.entity.viper.hurt": "Vibora danada"
+  "jei.orpheus.orpheus_lyre.line1": "Activa un Mythos Block en el Nether mientras te agachas con Hijo de Apolo para obtener este objeto.",
+  "jei.orpheus.orpheus_lyre.line2": "Sus poderes tambien funcionan cuando la lira esta equipada en una ranura charm de Curios.",
+  "jei.orpheus.calliopes_love.line1": "Activa un Mythos Block rodeado de flores mientras te agachas con el Codice Helenico en el Overworld.",
+  "jei.orpheus.calliopes_love.line2": "Este objeto se usa junto con el Arco de Lagrimas y la Lira para fabricar Hijo de Apolo.",
+  "jei.orpheus.brotoi_nectar.line1": "Usa una botella de miel sobre un cultivo de Nectar completamente crecido para embotellar Nectar Brotoi.",
+  "jei.orpheus.cow_gut.line1": "Tiene un 10% de probabilidad de caer de las vacas.",
+  "jei.orpheus.hephaestus_armor_fragment.line1": "Puede obtenerse cepillando arena sospechosa en piramides del desierto.",
+  "jei.orpheus.hephaestus_armor_fragment.line2": "Tambien aparece en los intercambios del aldeano filosofo.",
+  "jei.orpheus.philosopher_chest.line1": "Este objeto puede encontrarse en cofres dentro de las casas del filosofo en las aldeas.",
+  "jei.orpheus.philosopher_chest.line2": "Tambien puede aparecer en cofres dentro de las torres filosoficas de saqueadores.",
+  "jei.orpheus.philosopher_trade.line1": "Este objeto se obtiene mediante intercambios del aldeano filosofo.",
+  "jei.orpheus.philosopher_trade.line2": "Las casas de filosofo pueden generarse en las aldeas."
 }

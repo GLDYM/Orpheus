@@ -1,0 +1,33 @@
+{
+  "parent": "orpheus:guide/obtain_codex",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orpheus:calliopes_love"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.orpheus.obtain_calliopes.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "orpheus:calliopes_love"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_calliopes.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_brotoi_palladium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orpheus:brotoi_palladium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "orpheus:palladium_wooden_fragment_from_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_brotoi_palladium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "orpheus:palladium_wooden_fragment_from_block"
+    ]
+  }
+}

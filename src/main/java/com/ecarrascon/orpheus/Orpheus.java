@@ -1,16 +1,21 @@
 package com.ecarrascon.orpheus;
 
+import com.ecarrascon.orpheus.compat.curios.CuriosCompat;
 import com.ecarrascon.orpheus.config.ConfigDataCommon;
+import com.ecarrascon.orpheus.datagen.DataGenerators;
+import com.ecarrascon.orpheus.event.BusClientEvents;
 import com.ecarrascon.orpheus.registry.*;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -23,6 +28,7 @@ public class Orpheus {
     public static final String MOD_ID = "orpheus";
 
     // Directly reference a slf4j logger
+    @SuppressWarnings("unused")
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public Orpheus(IEventBus modEventBus, ModContainer modContainer) {
@@ -32,10 +38,13 @@ public class Orpheus {
         ItemsRegistry.ITEMS.register(modEventBus);
         VillagersRegistry.register(modEventBus);
         LootRegistry.LOOT_MODIFIER_SERIALIZERS.register(modEventBus);
-        EntitiesRegistry.ENTITY_TYPES.register(modEventBus);
-        SoundsRegistry.SOUND_EVENTS.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(DataGenerators::gatherData);
+        if (FMLEnvironment.dist == Dist.CLIENT) {
+            BusClientEvents.register(modEventBus);
+        }
+        CuriosCompat.registerEventHandlers();
 
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);

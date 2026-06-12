@@ -1,0 +1,33 @@
+{
+  "parent": "orpheus:guide/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orpheus:cow_gut"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.orpheus.obtain_gut.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "orpheus:cow_gut"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_gut.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

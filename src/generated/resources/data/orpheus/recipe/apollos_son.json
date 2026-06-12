@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "orpheus:tears_bow"
+    },
+    {
+      "item": "orpheus:lyre"
+    },
+    {
+      "item": "orpheus:calliopes_love"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "orpheus:apollos_son"
+  }
+}

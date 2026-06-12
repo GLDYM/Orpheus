@@ -1,0 +1,33 @@
+{
+  "parent": "orpheus:guide/obtain_calliopes",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orpheus:apollos_son"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.orpheus.obtain_son.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "orpheus:apollos_son"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_son.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

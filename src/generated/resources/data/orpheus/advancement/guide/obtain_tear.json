@@ -1,0 +1,33 @@
+{
+  "parent": "orpheus:guide/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orpheus:tears_of_hades"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.orpheus.obtain_tear.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "orpheus:tears_of_hades"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_tear.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

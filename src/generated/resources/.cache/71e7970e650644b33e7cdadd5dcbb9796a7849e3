@@ -1,0 +1,7 @@
+// 1.21.1	2026-06-11T14:44:42.1575255	Tags for minecraft:block mod id orpheus
+23884516df7af3c56acf36d16fc2c4551fe9057f data/c/tags/block/ores.json
+8c26a5e03c9bf959098aaf7c02f362488d0e1d88 data/minecraft/tags/block/flowers.json
+2e15b8699352beecb790a4c0c2b8c70545def3a8 data/minecraft/tags/block/flower_pots.json
+21b7a2bf8310b6df832f8d2efb114697f48c096d data/minecraft/tags/block/mineable/pickaxe.json
+c22d2a3bb331cd308c409deecfa28632f5c6e7cd data/minecraft/tags/block/needs_diamond_tool.json
+1edc7723bc45111cfe86506e28a077c18e253422 data/orpheus/tags/block/tears_of_hades_ores.json

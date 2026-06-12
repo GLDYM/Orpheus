@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "item": "orpheus:tears_of_hades"
+    },
+    "X": {
+      "item": "orpheus:hephaestus_armor_fragment"
+    }
+  },
+  "pattern": [
+    "XTX",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "orpheus:hephaestus_chestplate"
+  }
+}

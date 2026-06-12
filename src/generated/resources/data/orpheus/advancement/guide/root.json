@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancements.orpheus.obtain_fragment.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "orpheus:lyre"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_fragment.title"
+    }
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

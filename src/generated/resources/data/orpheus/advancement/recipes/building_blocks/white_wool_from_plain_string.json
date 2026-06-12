@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_plain_string": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orpheus:plain_string"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "orpheus:white_wool_from_plain_string"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_plain_string"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "orpheus:white_wool_from_plain_string"
+    ]
+  }
+}

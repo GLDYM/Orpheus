@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "orpheus:clean_cow_gut"
+  },
+  "result": {
+    "count": 1,
+    "id": "orpheus:cooked_cow_gut"
+  }
+}

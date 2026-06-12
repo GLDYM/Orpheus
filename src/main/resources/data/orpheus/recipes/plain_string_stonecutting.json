@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 3,
-  "ingredient": {
-    "item": "orpheus:clean_cow_gut"
-  },
-  "result": "orpheus:plain_string"
-}

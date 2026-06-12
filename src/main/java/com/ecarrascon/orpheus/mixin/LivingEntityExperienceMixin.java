@@ -1,7 +1,6 @@
 package com.ecarrascon.orpheus.mixin;
 
-import com.ecarrascon.orpheus.config.ConfigDataCommon;
-import com.ecarrascon.orpheus.registry.ItemsRegistry;
+import com.ecarrascon.orpheus.util.OrpheusLyreHelper;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -21,8 +20,7 @@ public abstract class LivingEntityExperienceMixin {
     private void noEnterTheIfToNotDropTheXp(ServerLevel level, @Nullable Entity killer, CallbackInfoReturnable<Integer> cir) {
         if ((Object) this instanceof Player player
                 && !player.level().getGameRules().getBoolean(GameRules.RULE_KEEPINVENTORY)
-                && player.getInventory().contains(ItemsRegistry.ORPHEUS_LYRE.get().getDefaultInstance())
-                && ConfigDataCommon.ORPHEUS_LYRE_POWER.get().matches(".*(?:keep|both).*")) {
+                && OrpheusLyreHelper.shouldKeepInventory(player)) {
             cir.setReturnValue(0);
         }
     }

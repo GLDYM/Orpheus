@@ -1,8 +1,7 @@
 package com.ecarrascon.orpheus.event;
 
-import com.ecarrascon.orpheus.config.ConfigDataCommon;
 import com.ecarrascon.orpheus.Orpheus;
-import com.ecarrascon.orpheus.registry.ItemsRegistry;
+import com.ecarrascon.orpheus.util.OrpheusLyreHelper;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -14,10 +13,9 @@ import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 public class ArrowImmuneEvent {
     @SubscribeEvent
     public static void allowDamage(LivingIncomingDamageEvent event) {
-        if (ConfigDataCommon.ORPHEUS_LYRE_POWER.get().matches(".*(?:protect|both).*")
-                && event.getEntity() instanceof Player player
+        if (event.getEntity() instanceof Player player
                 && event.getSource().is(DamageTypes.ARROW)
-                && player.getInventory().contains(ItemsRegistry.ORPHEUS_LYRE.get().getDefaultInstance())) {
+                && OrpheusLyreHelper.shouldProtectFromArrows(player)) {
             event.setAmount(0);
         }
     }

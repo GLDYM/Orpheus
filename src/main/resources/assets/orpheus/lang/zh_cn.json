@@ -21,7 +21,6 @@
     "item.orpheus.orpheus_lyre": "俄耳甫斯里拉琴",
     "item.orpheus.tears_of_hades": "哈迪斯之泪",
     "item.orpheus.tears_bow": "泪之弓",
-    "item.orpheus.vipera_ammodytes_spawn_egg": "角蝰刷怪蛋",
     "item.orpheus.hellenic_codex": "希腊法典",
     "item.orpheus.aristotles_nicomachean_ethics_scroll_fragment": "亚里士多德的《尼各马可伦理学》卷轴碎片",
     "item.orpheus.brotoi_nectar": "布罗托伊花蜜",
@@ -53,7 +52,6 @@
 
     "entity.minecraft.villager.philosopher": "哲学家",
     "entity.minecraft.villager.orpheus.philosopher": "哲学家",
-    "entity.orpheus.viper": "角蝰",
 
     "block.orpheus.moly_herb": "莫利草",
     "block.orpheus.epiphany_table": "顿悟桌",
@@ -65,8 +63,16 @@
     "block.orpheus.tears_of_hades_ore": "哈迪斯之泪矿石",
     "block.orpheus.tears_of_hades_block": "哈迪斯之泪块",
 
-
-    "sounds.orpheus.entity.viper.ambient": "角蝰:嘶嘶",
-    "sounds.orpheus.entity.viper.death": "角蝰：死亡",
-    "sounds.orpheus.entity.viper.hurt": "角蝰：受伤"
+    "jei.orpheus.orpheus_lyre.line1": "在下界对激活的神话块手持阿波罗之子并潜行，即可获得这把琴。",
+    "jei.orpheus.orpheus_lyre.line2": "将它装备在 Curios 的护符饰品栏中时，效果同样会生效。",
+    "jei.orpheus.calliopes_love.line1": "在主世界中，用花朵包围激活的神话块，手持希腊法典并潜行即可获得。",
+    "jei.orpheus.calliopes_love.line2": "它会和泪之弓、里拉琴一起合成阿波罗之子。",
+    "jei.orpheus.brotoi_nectar.line1": "对成熟的花蜜作物使用蜂蜜瓶即可装取布罗托伊花蜜。",
+    "jei.orpheus.cow_gut.line1": "奶牛有 10% 概率掉落。",
+    "jei.orpheus.hephaestus_armor_fragment.line1": "可以从沙漠金字塔的可疑沙中刷出。",
+    "jei.orpheus.hephaestus_armor_fragment.line2": "哲学家村民的交易中也会提供它。",
+    "jei.orpheus.philosopher_chest.line1": "该物品可在村庄中的哲学家小屋箱子里找到。",
+    "jei.orpheus.philosopher_chest.line2": "它也会出现在掠夺者哲思塔内的箱子中。",
+    "jei.orpheus.philosopher_trade.line1": "该物品来自哲学家村民交易。",
+    "jei.orpheus.philosopher_trade.line2": "哲学家房屋会生成在村庄中。"
 }

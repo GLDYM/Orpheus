@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_clean_cow_gut": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orpheus:clean_cow_gut"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "orpheus:cooked_cow_gut_from_smoking"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_clean_cow_gut"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "orpheus:cooked_cow_gut_from_smoking"
+    ]
+  }
+}

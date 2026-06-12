@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "orpheus:item/homers_the_odyssey_scroll_fragment"
+  }
+}

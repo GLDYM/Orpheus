@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "orpheus:tears_of_hades_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "orpheus:tears_of_hades"
+  }
+}

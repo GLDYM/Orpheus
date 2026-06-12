@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 4,
-  "ingredient": {
-    "item": "minecraft:white_wool"
-  },
-  "result": "orpheus:plain_string"
-}

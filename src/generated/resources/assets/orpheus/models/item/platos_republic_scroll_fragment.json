@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "orpheus:item/platos_republic_scroll_fragment"
+  }
+}

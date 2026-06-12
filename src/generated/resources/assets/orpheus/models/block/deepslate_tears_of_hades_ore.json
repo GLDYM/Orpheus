@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "orpheus:block/deepslate_tears_of_hades_ore"
+  }
+}

@@ -3,7 +3,6 @@ package com.ecarrascon.orpheus.registry;
 import com.ecarrascon.orpheus.Orpheus;
 import com.ecarrascon.orpheus.block.MythosBlock;
 import com.ecarrascon.orpheus.block.NectarCropBlock;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.*;

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "orpheus:pegasus_feathers_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "orpheus:pegasus_feather"
+  }
+}

@@ -21,7 +21,6 @@
   "item.orpheus.orpheus_lyre": "Orpheus Lyre",
   "item.orpheus.tears_of_hades": "Tears Of Hades",
   "item.orpheus.tears_bow": "Tears Bow",
-  "item.orpheus.vipera_ammodytes_spawn_egg": "Vipera Ammodytes Spawn Egg",
   "item.orpheus.hellenic_codex": "Hellenic Codex",
   "item.orpheus.aristotles_nicomachean_ethics_scroll_fragment": "Aristotle's Nicomachean Ethics Scroll Fragment",
   "item.orpheus.brotoi_nectar": "Brotoi Nectar",
@@ -53,7 +52,6 @@
 
   "entity.minecraft.villager.philosopher": "Philosopher",
   "entity.minecraft.villager.orpheus.philosopher": "Philosopher",
-  "entity.orpheus.viper": "Vipera Ammodytes",
 
   "block.orpheus.moly_herb": "Moly Herb",
   "block.orpheus.epiphany_table": "Epiphany Table",
@@ -65,7 +63,16 @@
   "block.orpheus.tears_of_hades_ore": "Tears of Hades Ore",
   "block.orpheus.tears_of_hades_block": "Tears of Hades Block",
 
-  "sounds.orpheus.entity.viper.ambient": "Viper Hissing",
-  "sounds.orpheus.entity.viper.death": "Viper Death",
-  "sounds.orpheus.entity.viper.hurt": "Viper Hurt"
+  "jei.orpheus.orpheus_lyre.line1": "Activate an active Mythos Block in the Nether while sneaking with Apollo's Son to obtain this item.",
+  "jei.orpheus.orpheus_lyre.line2": "Its powers also work when the lyre is equipped in a Curios charm slot.",
+  "jei.orpheus.calliopes_love.line1": "Activate an active Mythos Block surrounded by flowers while sneaking with the Hellenic Codex in the Overworld.",
+  "jei.orpheus.calliopes_love.line2": "This item is used together with the Tears Bow and Lyre to craft Apollo's Son.",
+  "jei.orpheus.brotoi_nectar.line1": "Use a honey bottle on a fully grown Nectar Crop to bottle Brotoi Nectar.",
+  "jei.orpheus.cow_gut.line1": "Has a 10% chance to drop from cows.",
+  "jei.orpheus.hephaestus_armor_fragment.line1": "Can be brushed from suspicious sand in desert pyramids.",
+  "jei.orpheus.hephaestus_armor_fragment.line2": "It is also offered in philosopher villager trades.",
+  "jei.orpheus.philosopher_chest.line1": "This item can be found in chests inside philosopher houses in villages.",
+  "jei.orpheus.philosopher_chest.line2": "It can also appear in chests inside philosopher pillager towers.",
+  "jei.orpheus.philosopher_trade.line1": "This item is obtained from philosopher villager trades.",
+  "jei.orpheus.philosopher_trade.line2": "Philosopher houses can generate in villages."
 }

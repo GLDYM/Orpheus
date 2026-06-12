@@ -1,6 +1,0 @@
-{
-    "parent": "orpheus:item/tears_bow",
-    "textures": {
-        "layer0": "orpheus:item/tears_bow_pulling_1"
-    }
-}

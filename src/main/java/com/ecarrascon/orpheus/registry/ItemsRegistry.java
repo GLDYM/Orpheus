@@ -4,11 +4,8 @@ import com.ecarrascon.orpheus.Orpheus;
 import com.ecarrascon.orpheus.item.*;
 import com.ecarrascon.orpheus.item.setting.ItemSettingsHelper;
 import com.google.common.collect.Sets;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
-import net.neoforged.neoforge.common.DeferredSpawnEggItem;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -44,13 +41,11 @@ public class ItemsRegistry {
 
 
     // Items
-    public static final DeferredItem<Item> VIPERA_AMMODYTES_SPAWN_EGG = registerWithTab("vipera_ammodytes_spawn_egg",
-            () -> new DeferredSpawnEggItem(EntitiesRegistry.VIPER,0xB6D7A8, 0xCEBB80, ItemSettingsHelper.stackableItem()));
     public static final DeferredItem<Item> NECTAR_SEED = registerWithTab("nectar_seed",
             () -> new ItemNameBlockItem(BlocksRegistry.NECTAR_CROP.get(), ItemSettingsHelper.stackableItem()));
 
     public static final DeferredItem<Item> BROTOI_NECTAR = registerWithTab("brotoi_nectar",
-            () -> new HoneyBottleItem(ItemSettingsHelper.noStackableItem()
+            () -> new HoneyBottleItem(ItemSettingsHelper.stackableItem().stacksTo(23)
                     .food(new FoodProperties.Builder().nutrition(5).saturationModifier(19.4f).build())));
     public static final DeferredItem<Item> BROTOI_PALLADIUM = registerWithTab("brotoi_palladium",
             () -> new BrotoiPalladiumItem(ItemSettingsHelper.noStackableItem()));

@@ -1,0 +1,33 @@
+{
+  "parent": "orpheus:guide/root",
+  "criteria": {
+    "has_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orpheus:hellenic_codex"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.orpheus.obtain_codex.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "orpheus:hellenic_codex"
+    },
+    "title": {
+      "translate": "advancements.orpheus.obtain_codex.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

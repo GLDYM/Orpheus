@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "T": {
+      "item": "orpheus:tears_of_hades"
+    },
+    "X": {
+      "item": "orpheus:hephaestus_armor_fragment"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XTX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "orpheus:hephaestus_helmet"
+  }
+}

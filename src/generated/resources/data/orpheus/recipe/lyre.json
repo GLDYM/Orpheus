@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo"
+    },
+    "H": {
+      "item": "minecraft:honeycomb"
+    },
+    "K": {
+      "item": "minecraft:turtle_scute"
+    },
+    "S": {
+      "item": "orpheus:plain_string"
+    }
+  },
+  "pattern": [
+    "###",
+    "SSS",
+    "HKH"
+  ],
+  "result": {
+    "count": 1,
+    "id": "orpheus:lyre"
+  }
+}

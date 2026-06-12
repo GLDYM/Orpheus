@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pegasus_feather": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orpheus:pegasus_feather"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "orpheus:pegasus_feathers_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_pegasus_feather"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "orpheus:pegasus_feathers_block"
+    ]
+  }
+}

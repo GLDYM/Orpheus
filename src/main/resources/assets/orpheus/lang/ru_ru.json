@@ -62,4 +62,17 @@
   "block.orpheus.deepslate_tears_of_hades_ore": "Глубинный сланец со слезами Аида",
   "block.orpheus.tears_of_hades_ore": "Камень со слезами Аида",
   "block.orpheus.tears_of_hades_block": "Блок слёз Аида"
+,
+  "jei.orpheus.orpheus_lyre.line1": "Чтобы получить этот предмет, активируйте Mythos Block в Нижнем мире, держа в руке Apollo's Son и присев.",
+  "jei.orpheus.orpheus_lyre.line2": "Его силы также работают, если лира экипирована в charm-слоте Curios.",
+  "jei.orpheus.calliopes_love.line1": "Активируйте Mythos Block, окружённый цветами, держа Hellenic Codex в Верхнем мире и присев.",
+  "jei.orpheus.calliopes_love.line2": "Этот предмет используется вместе с Tears Bow и Lyre для создания Apollo's Son.",
+  "jei.orpheus.brotoi_nectar.line1": "Используйте бутылочку мёда на полностью выросшем Nectar Crop, чтобы получить Brotoi Nectar.",
+  "jei.orpheus.cow_gut.line1": "С шансом 10% выпадает из коров.",
+  "jei.orpheus.hephaestus_armor_fragment.line1": "Можно получить, очищая подозрительный песок в пустынных пирамидах.",
+  "jei.orpheus.hephaestus_armor_fragment.line2": "Также встречается в сделках с деревенским философом.",
+  "jei.orpheus.philosopher_chest.line1": "Этот предмет можно найти в сундуках внутри домов философа в деревнях.",
+  "jei.orpheus.philosopher_chest.line2": "Он также встречается в сундуках внутри философских башен разбойников.",
+  "jei.orpheus.philosopher_trade.line1": "Этот предмет можно получить через сделки с деревенским философом.",
+  "jei.orpheus.philosopher_trade.line2": "Дома философов могут появляться в деревнях."
 }

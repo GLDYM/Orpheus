@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "orpheus:brotoi_palladium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "orpheus:palladium_wooden_fragment"
+  }
+}

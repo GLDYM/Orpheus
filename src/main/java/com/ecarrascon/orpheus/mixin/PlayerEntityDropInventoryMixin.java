@@ -1,7 +1,6 @@
 package com.ecarrascon.orpheus.mixin;
 
-import com.ecarrascon.orpheus.config.ConfigDataCommon;
-import com.ecarrascon.orpheus.registry.ItemsRegistry;
+import com.ecarrascon.orpheus.util.OrpheusLyreHelper;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.GameRules;
 import org.spongepowered.asm.mixin.Mixin;
@@ -15,8 +14,7 @@ public abstract class PlayerEntityDropInventoryMixin {
     @Inject(method = "dropEquipment", at = @At("HEAD"), cancellable = true)
     private void noEnterTheIfToNotDropTheItems(CallbackInfo info) {
         if (!((Player) (Object) this).level().getGameRules().getBoolean(GameRules.RULE_KEEPINVENTORY)
-                && ((Player) (Object) this).getInventory().contains(ItemsRegistry.ORPHEUS_LYRE.get().getDefaultInstance())
-                && ConfigDataCommon.ORPHEUS_LYRE_POWER.get().matches(".*(?:keep|both).*")) {
+                && OrpheusLyreHelper.shouldKeepInventory((Player) (Object) this)) {
             info.cancel();
         }
     }
